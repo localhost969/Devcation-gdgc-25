@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devcation`25</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .cardproject {
+            width: calc(50% - 10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .cardproject:hover {
+            transform: scale(1.05);
+        }
+        .cardimage {
+            width: 100%;
+            height: auto;
+        }
+        .layer {
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        .layer h2 {
+            margin-top: 0;
+        }
+        a.sc-beySPh {
+            display: inline-block;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #12263F;
+            color: white;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        a.sc-beySPh:hover {
+            background-color: #0A1B2F;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        .stat-item {
+            padding: 20px;
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #12263F;
+        }
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .timeline-icon {
+            font-size: 24px;
+            color: #12263F;
+        }
+        .prize-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .prize-card {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background: white;
+        }
+        .sponsors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .sponsor-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="/assets/logogdg-oPSCtV20.png" alt="Logo" style="height: 50px; width: 200px;"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#devcation">Devcation`25</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#tracks">Tracks</a></li>
+                <li><a href="#prizes">Prizes</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Devcation`25</h1>
+        <p><strong>↗ Register Now</strong></p>
+    </section>
+
+    <div class="stats">
+        <div class="stat-item">
+            <div class="stat-number">4.6/5+</div>
+            <p>Hacker rating</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">300+</div>
+            <p>Hacks</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">25+</div>
+            <p>Speakers and mentors</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <p>Hackers</p>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>About GDG IGDTUW</h2>
+        <p>Here at GDG IGDTUW, we explore technology and use it to build products that brings about positive change in society. We conduct mentorship sessions, workshops, knowledge transfer sessions, hackathons, coding contests, open source programs, etc. where students from across the globe get to showcase their knowledge and develop their skillset.</p>
+        <p>We have helped more than 7000+ university students to expand their technical knowledge and skills.</p>
+    </section>
+
+    <section id="devcation">
+        <h2>About Devcation`25</h2>
+        <p>Devcation is a week-long technical festival organized by Google Developer Groups - Indira Gandhi Delhi Technical University for Women that celebrates diversity in the TechForGood Domain. During the week, we have the Devcation`25 hackathon. These events are designed to spark your creativity, encourage innovative thinking, and help you craft tech solutions that stand out.</p>
+    </section>
+
+    <section id="tracks">
+        <h2>Tracks</h2>
+        <ul>
+            <li>HealthTech</li>
+            <li>EdTech</li>
+            <li>Sustainable Development (Open Innovation)</li>
+            <li>FinTech</li>
+        </ul>
+    </section>
+
+    <section id="judges">
+        <h2>Judges</h2>
+        <ul>
+            <li>Kartik Mathur</li>
+            <li>Vani Chitkara</li>
+            <li>Aarnav Jindal</li>
+        </ul>
+    </section>
+
+    <section id="mentors">
+        <h2>Mentors</h2>
+        <div class="mentors-grid">
+            <div class="mentor">Radhika Bansal</div>
+            <div class="mentor">Sanidhya Goel</div>
+            <div class="mentor">Tejaswi Tyagi</div>
+            <div class="mentor">Akanksha Jha</div>
+            <div class="mentor">Vikranth Udandarao</div>
+            <div class="mentor">Rudra Pratap Dash</div>
+            <div class="mentor">Aishvi Guleria</div>
+            <div class="mentor">Pratham Batra</div>
+            <div class="mentor">Teeksha Harish</div>
+            <div class="mentor">Dhruv Bakshi</div>
+            <div class="mentor">Suhani Nagpal</div>
+            <div class="mentor">Tanmay Arora</div>
+            <div class="mentor">Aditya Girdhar</div>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <h2>Timeline</h2>
+        <div class="timeline-item">
+            <i class="fas fa-flag timeline-icon"></i>
+            <div>
+                <h3>🎉 Opening Ceremony & Registration 🚀</h3>
+                <p>April 4th, 2025</p>
+                <p>Submission for all Mini Events and the Registration for the Hackathon Starts</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <i class="fas fa-code timeline-icon"></i>
+            <div>
+                <h3>Hacking Period Starts</h3>
+                <p>April 8th, 2025</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <i class="fas fa-stopwatch timeline-icon"></i>
+            <div>
+                <h3>Hacking Period Ends</h3>
+                <p>April 12th, 2025</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <i class="fas fa-chalkboard-teacher timeline-icon"></i>
+            <div>
+                <h3>Mentorship Round Starts</h3>
+                <p>April 13th, 2025</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <i class="fas fa-trophy timeline-icon"></i>
+            <div>
+                <h3>Final Pitching and Closing Ceremony</h3>
+                <p>April 15th, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="prizes">
+        <h2>Prizes</h2>
+        <div class="prize-grid">
+            <div class="prize-card">
+                <h3>Hack & Solve Winners</h3>
+                <p>Cash Prize with swag kits, medals, certificates, social media shoutouts, Interview Buddy Mock Interviews, Codecrafter Membership, Unstop Coupons.</p>
+            </div>
+            <div class="prize-card">
+                <h3>Mini Event Winners</h3>
+                <p>Goodies, certificates, social media shoutouts, and more.</p>
+            </div>
+            <div class="prize-card">
+                <h3>All Finalists</h3>
+                <p>Exciting goodies, certificates, and more.</p>
+            </div>
+            <div class="prize-card">
+                <h3>All Participants</h3>
+                <p>Certificates and 50% unstop coupons.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors">
+        <h2>Sponsors</h2>
+        <div class="sponsors-grid">
+            <div class="sponsor-item">Sponsor 1</div>
+            <div class="sponsor-item">Sponsor 2</div>
+            <div class="sponsor-item">Sponsor 3</div>
+            <div class="sponsor-item">Sponsor 4</div>
+            <div class="sponsor-item">Sponsor 5</div>
+            <div class="sponsor-item">Sponsor 6</div>
+        </div>
+    </section>
+
+    <section id="events">
+        <h1 class="skill-head" id="event">Events DEVCATION 25</h1>
+        <div class="project-container">
+            <!-- Event Card 1 -->
+            <div class="cardproject">
+                <img class="cardimage" src="/pixel.jpg" alt="Pixel Haven">
+                <div class="layer">
+                    <h2>Pixel Haven</h2>
+                    <p>Design cozy, game-inspired pixel art scenes using tools like Pixilart or Aseprite. Think Stardew Valley vibes, perfect for Chrome wallpapers!</p>
+                    <a class="sc-beySPh dMtRBF" href="#">Register Now</a>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="cardproject">
+                <img class="cardimage" src="/futureScape.jpg" alt="Futurescape: Visionary Tech Forecast">
+                <div class="layer">
+                    <h2>Futurescape: Visionary Tech Forecast</h2>
+                    <p>Predict the future of a tech stack in a creative blog format—news, fiction, or research-based. Explore what tech might look like in 2040 and beyond.</p>
+                    <a class="sc-beySPh dMtRBF" href="#">Register Now</a>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="cardproject">
+                <img class="cardimage" src="/Gemini.png" alt="Gemini ReVamp: Code & Create">
+                <div class="layer">
+                    <h2>Gemini ReVamp: Code & Create</h2>
+                    <p>Use Gemini AI to generate and refine UI components, redesign the Devcation interface with Tailwind/Bootstrap, and deploy on Replit.</p>
+                    <a class="sc-beySPh dMtRBF" href="#">Register Now</a>
+                </div>
+            </div>
+
+            <!-- Event Card 4 -->
+            <div class="cardproject">
+                <img class="cardimage" src="/neonmirage.jpg" alt="Neon Mirage: Cyberpunk AR Filter">
+                <div class="layer">
+                    <h2>Neon Mirage: Cyberpunk AR Filter</h2>
+                    <p>Create a cyberpunk-themed AR filter with interactive elements using Lens Studio. Bring your imagination to life in augmented reality!</p>
+                    <a class="sc-beySPh dMtRBF" href="#">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li>Who can contribute? Anyone with an interest in technology...</li>
+            <li>Where can we reach out in case of queries? Discord Server...</li>
+            <li>Do I need to have coding experience to participate? Not necessary...</li>
+            <li>What happens after the hackathon ends? Top 10 teams will be invited...</li>
+            <li>How can I stay updated on hackathon announcements and events? Join Discord...</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Send your message here and we will try to get back to you as soon as possible.</p>
+        <form>
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>dscigdtuw@gmail.com</p>
+        <p>Join Discord | Join Whatsapp | JOIN OUR CHAPTER</p>
+    </footer>
+</body>
+</html>
