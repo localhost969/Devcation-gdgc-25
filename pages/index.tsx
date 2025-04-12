@@ -31,7 +31,8 @@ export default function Home() {
       
       <Navbar />
       
-      <main className="flex-grow overflow-x-hidden">
+      {/* Add padding-top to account for fixed navbar and padding-bottom for fixed copyright */}
+      <main className="flex-grow overflow-x-hidden pt-[72px] pb-10">
         <HeroSection />
         <AboutSection />
         <DevcationSection />

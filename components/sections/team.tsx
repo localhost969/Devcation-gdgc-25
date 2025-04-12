@@ -90,19 +90,21 @@ const mentors = [
 
 export function TeamSection() {
   return (
-    <section id="team" className="py-24 bg-muted/50">
+    <section id="team" className="py-16 bg-muted/50"> {/* Reduced padding */}
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Judges Section */}
-        <div className="mb-24">
-          <div className="text-center mb-16">
+        <div className="mb-16"> {/* Reduced margin */}
+          <div className="text-center mb-12"> {/* Reduced margin */}
             <h2 className="text-4xl font-bold mb-3">Judges</h2>
             <div className="w-24 h-1.5 bg-primary mx-auto"></div>
           </div>
-          
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+
+          {/* Removed flex centering, added max-w-max */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 mx-auto max-w-max"> {/* Adjusted lg columns back, added max-w-max for centering */}
             {judges.map((judge, index) => (
-              <Card key={index} className="overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 h-full">
-                <div className="relative w-full pt-[75%]"> {/* Reduced aspect ratio from 100% to 75% */}
+              /* Removed max-w-[...] sm:max-w-none */
+              <Card key={index} className="overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 h-full w-48"> 
+                <div className="relative w-full pt-[100%]"> {/* Consistent square aspect ratio */}
                   <Image
                     src={judge.image}
                     alt={judge.name}
@@ -110,9 +112,9 @@ export function TeamSection() {
                     className="object-cover"
                   />
                 </div>
-                <CardHeader className="flex flex-row items-center justify-between py-2 px-3 bg-primary/5">
-                  <CardTitle className="text-base">{judge.name}</CardTitle>
-                  <a 
+                <CardHeader className="flex flex-row items-center justify-between p-2 bg-primary/5"> {/* Adjusted padding */}
+                  <CardTitle className="text-sm font-medium">{judge.name}</CardTitle> {/* Adjusted font size/weight */}
+                  <a
                     href={judge.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -128,15 +130,15 @@ export function TeamSection() {
 
         {/* Mentors Section */}
         <div>
-          <div className="text-center mb-16">
+          <div className="text-center mb-12"> {/* Reduced margin */}
             <h2 className="text-4xl font-bold mb-3">Mentors</h2>
             <div className="w-24 h-1.5 bg-primary mx-auto"></div>
           </div>
-          
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"> {/* Reduced gap, added md breakpoint */}
             {mentors.map((mentor, index) => (
               <Card key={index} className="overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 h-full">
-                <div className="relative w-full pt-[75%]"> {/* Reduced aspect ratio from 100% to 75% */}
+                <div className="relative w-full pt-[100%]"> {/* Changed aspect ratio to square */}
                   <Image
                     src={mentor.image}
                     alt={mentor.name}
@@ -144,9 +146,9 @@ export function TeamSection() {
                     className="object-cover"
                   />
                 </div>
-                <CardHeader className="flex flex-row items-center justify-between py-2 px-3 bg-primary/5">
-                  <CardTitle className="text-base">{mentor.name}</CardTitle>
-                  <a 
+                <CardHeader className="flex flex-row items-center justify-between p-2 bg-primary/5"> {/* Adjusted padding */}
+                  <CardTitle className="text-sm font-medium">{mentor.name}</CardTitle> {/* Reduced font size/weight */}
+                  <a
                     href={mentor.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
